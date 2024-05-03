@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+.section-p2 {
+    padding: 40px 77px;
+}
+
+/*HEADER */
+.navbar {
+    background-color: #e3f2fd;
+    margin-top: -1px;
+}
+
+.navbar img {
+    width: 140px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(245, 238, 251);
+    min-width: 130px;
+    box-shadow: 0 8px 16px rgb(189, 185, 185);
+    z-index: 4;
+}
+
+/* Styles for large devices*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Styles for small devices (click) */
+@media only screen and (max-width: 600px) {
+    .dropdown:hover .dropdow-menu {
+        display: none;
+    }
+
+    .dropdown:active .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .container-fluid {
+        display: flex;
+    }
+}
+
+.row2 .nav {
+    justify-content: center;
+    color: gray;
+    margin-top: -2px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.fa {
+    display: flex;
+}
+
+form {
+    display: flex;
+}
+
+.navbar .btn {
+    color: black;
+}
+
+.navbar .btn:hover {
+    background-color: rgb(181, 226, 178);
+    color: black;
+}
+
+.navbar i {
+    color: rgb(62, 62, 233);
+}
+
+.navbar i:hover {
+    color: black
+}
+
+.navbar .form-inline .btn {
+    margin-top: 2px;
+    height: 37px;
+    color: black;
+}
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #e3f2fd;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#footer {
+    background-color: #e3f2fd;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 700px;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid #555;
+    margin: 20px 0;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #066ac2;
+}
+
+
+/*jQuery for header for different devices*/
+@media (max-width: 767px) {
+
+    span {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 2560px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+
+/*jQuery for footer for different devices*/
+@media (max-width: 767px) {
+    .column {
+        flex: 1 0 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .column {
+        flex: 1 0 48%;
+    }
+}
+
+@media (min-width: 992px) {
+    .column {
+        flex: 1 0 23%;
+    }
+}
+
+/*HOME PAGE*/
+#background {
+    background-image: url("background.png");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    margin-top: -1px;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+#background a {
+    background-repeat: no-repeat;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 110px;
+}
+
+
+/*FEATURED PRODUCTS*/
+#fproduct h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fproduct .card {
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#fproduct .card:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#fproduct .card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#fproduct .card .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#fproduct .card .des span {
+    color: #d81010;
+    font-size: 12px;
+}
+
+#fproduct .card .des h5 {
+    color: #1a1a1a;
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+#fproduct .card .des i {
+    color: rgb(243, 181, 27);
+    font-size: 12px;
+}
+
+#fproduct .card .des h4 {
+    padding-top: 7px;
+    color: green;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#fproduct .card .cart1 {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #1a1a1a;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("banner.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+}
+
+#banner h2 {
+    font-size: 30px;
+    padding: 10px 0;
+    color: black;
+    font-weight: 600;
+}
+
+#banner a:hover {
+    background-color: rgb(148, 196, 148);
+    color: #000;
+}
+
+/*ALL PRODUCTS*/
+.heading h1 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row .card {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.row .card:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.row .card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.row .card span {
+    color: #d81010;
+    font-size: 12px;
+}
+
+.row .card h5 {
+    color: #1a1a1a;
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+.row .card .stars i {
+    color: rgb(243, 181, 27);
+    font-size: 12px;
+}
+
+.row .card a i {
+    color: black;
+    font-size: 16px;
+}
+
+.row .card h4 {
+    padding-top: 7px;
+    color: green;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.row .card a .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #1a1a1a;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    margin-right: -15px;
+}
+
+/*LOGIN PAGE*/
+.login-box {
+    background-color: rgb(202, 222, 232);
+    border: 2px solid #ccc;
+    height: 70vh;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+}
+
+.login-box h4 {
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.login-box p {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.email,
+.password,
+.checkbox,
+.signin {
+    margin-bottom: 15px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px;
+}
+
+.form-btn {
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    background: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+/*CONTACT*/
+.contactus {
+    margin-top: 400px;
+}
+
+.contactus img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+}
+
+.contactus form {
+    display: block;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    justify-content: center;
+}
+
+input {
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+}
+
+.contactus a {
+    padding: 10px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 90%;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*CART*/
+#cart-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-details {
+    flex: 1;
+    margin: 0 10px;
+}
+
+#cart-container .quantity-box input {
+    width: 30px;
+}
+
+#cart-container h4 {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 0 0;
+    background-color: rgb(223, 222, 222);
+    margin-bottom: 8px;
+}
+
+#cart-container {
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 400px;
+}
+
+#cart-container .product-details {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#cart-container .cart-item img {
+    margin-left: 20px;
+    height: 170px;
+    width: 120px;
+}
+
+.quantity-form {
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+
+.quantity-btn {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 0px 5px;
+    border-radius: 4px;
+    height: auto;
+    margin-top: -2px;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+.quantity-btn:hover {
+    color: #000;
+    background-color: rgb(241, 169, 169);
+}
+
+#cart-container .product-details button {
+    border: none;
+    background-color: transparent;
+    color: rgb(249, 51, 51);
+}
+
+.summary-card {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.summary-card h4 {
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: -2px;
+    border: 1px solid #ccc;
+    border: 4px 4px 0 0;
+    height: 50px;
+    width: 299px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: rgb(223, 222, 222);
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.left-content {
+    text-align: left;
+}
+
+.right-content {
+    text-align: right;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.summary-card a {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}

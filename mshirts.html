@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3561a9cec8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Men:Shirts</title>
+</head>
+<body onload="myFunction">
+    <div id="header">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="LOGO.png" alt="Logo" width="200px" height="50px" class="d-inline-block align-text-top">
+                </a>
+                <span>
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Product name, Category name etc." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </span>
+                <span>
+                    <div>
+                        <a href="login.html" class="btn btn-outline-primary ml-2">Login</a>
+                        <a href="cart.html"><i class="fas fa-shopping-cart fa-xl ml-2"></i></a>
+                    </div>
+                </span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <form class="form-inline ml-auto">
+                        <input class="form-control" type="search" placeholder="Product name, Category name etc." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div>
+                        <a href="login.html" class="btn btn-outline-primary ml-2">Login</a>
+                        <a href="cart.html"><i class="fas fa-shopping-cart fa-xl ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row2" style="background-color: rgb(219, 225, 240);">
+            <div class="container-fluid">            <!-- Second part of the header -->
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">All Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                        <li class="nav-item dropdown">   <!-- Women dropdown content here -->
+                            <a class="nav-link dropdown-toggle" href="#" id="womenDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women</a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="product.html">All Products</a></li>
+                                <li><a class="dropdown-item" href="Dress.html">Dresses</a></li>
+                                <li><a class="dropdown-item" href="fpants.html">Pants</a></li>
+                                <li><a class="dropdown-item" href="fshirts.html">Shirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">Men</a>
+                            <ul class="dropdown-menu "><!-- Men dropdown content here -->
+                                <li><a class="dropdown-item" href="product.html">All Products</a></li>
+                                <li><a class="dropdown-item" href="mshirts.html">Shirts </a></li>
+                                <li><a class="dropdown-item" href="mpants.html">Pants</a></li>
+                                <li><a class="dropdown-item" href="hoodie.html">Hoodies</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MEN'S SHIRTS SECTION PART-->
+    <div class="heading">
+        <h1>SHIRTS</h1>
+    </div>
+    <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2 g-4">
+       <!--Men:shirts-->
+        <div class="col">
+            <div class="card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1699125271_8998263.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="Sweatshirt">
+                <div class="card-body">
+                    <span>TSS</span>
+                    <h5>Shirt</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1699620552_3672744.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="Cotton Peach Shirt">
+                <div class="card-body">
+                    <span>H&M</span>
+                    <h5>Shirt</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1679741054_2461403.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="Denim Shirt">
+                <div class="card-body">
+                    <span>TSS</span>
+                    <h5>Shirt</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1697867343_2753801.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="Linen Shirt">
+                <div class="card-body">
+                    <span>H&M</span>
+                    <h5>Shirt</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1697775986_5147651.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="Printed Shirt">
+                <div class="card-body">
+                    <span>TSS</span>
+                    <h5>Shirt</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1696594166_9920728.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="Off White Shirt">
+                <div class="card-body">
+                    <span>H&M</span>
+                    <h5>Shirt</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffbf52;"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="row1">
+            <div class="column">
+                <h4>Women</h4>
+                <div>Dresses</div>
+                <div>Pants</div>
+                <div>Sweatshirts</div>
+            </div>
+            
+            <div class="column">
+                <h4>Men</h4>
+                <div>Shirts</div>
+                <div>Pants</div>
+                <div>Hoodies</div>
+            </div>
+            <div class="column">
+                <h4>Kids</h4>
+            </div>
+            <div class="column">
+                <h4>Links</h4>
+                <a href="index.html">Home</a><br>
+                <a href="contact.html">Contact</a><br>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="copyright">
+            &copy; 2023 LuxeLane. All rights reserved.
+        </div>
+    </div>
+    <script src="inject.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
